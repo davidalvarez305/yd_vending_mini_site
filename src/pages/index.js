@@ -1,6 +1,9 @@
 export default function Home({ headline }) {
     return (
-      <h1>{headline}</h1>
+      <div>
+        <h1>{headline}</h1>
+      <h2>Hey</h2>
+      </div>
     );
   }
   
