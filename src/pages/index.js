@@ -1,18 +1,18 @@
-export default function Home({ headline }) {
+export default function Home({ companyName }) {
     return (
       <div>
-        <h1>{headline}</h1>
+        <h1>{companyName}</h1>
       <h2>Hey</h2>
       </div>
     );
   }
   
   export async function getServerSideProps() {
-    const headline = process.env.NEXT_PUBLIC_HEADLINE;
+    const companyName = process.env.NEXT_PUBLIC_COMPANY_NAME;
   
     return {
       props: {
-        headline,
+        companyName,
       },
     };
   }
